@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <TextView
+        android:id="@+id/text_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:textAlignment="textStart"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@id/rcy_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!--    <androidx.recyclerview.widget.RecyclerView-->
+    <!--        android:id="@+id/rcy_view"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:scrollbars="none"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+    <LinearLayout
+        android:id="@+id/rcy_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/gray_200"
+            android:visibility="visible" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_shodo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardPreventCornerOverlap="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/icon_shodo"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="初動点検登録ボタン"
+                    app:cornerSizeBottomLeft="0dp"
+                    app:cornerSizeBottomRight="0dp"
+                    app:shapeAppearance="?attr/shapeAppearanceMediumComponent"
+                    app:srcCompat="@drawable/ic_account_balance_64" />
+
+                <TextView
+                    android:id="@+id/text_shodo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:text="初動点検結果"
+                    android:textAppearance="?attr/textAppearanceHeadline6" />
+
+                <ImageView
+                    android:id="@+id/next_shodo"
+                    android:layout_width="32dp"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="初動点検登録画面移動イメージ"
+                    app:cornerSizeBottomLeft="0dp"
+                    app:cornerSizeBottomRight="0dp"
+                    app:shapeAppearance="?attr/shapeAppearanceMediumComponent"
+                    app:srcCompat="@drawable/ic_next_right_64" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/gray_200"
+            android:visibility="visible" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_shosai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardPreventCornerOverlap="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/icon_shosai"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="詳細点検登録ボタン"
+                    app:cornerSizeBottomLeft="0dp"
+                    app:cornerSizeBottomRight="0dp"
+                    app:shapeAppearance="?attr/shapeAppearanceMediumComponent"
+                    app:srcCompat="@drawable/ic_build_64" />
+
+                <TextView
+                    android:id="@+id/text_shosai"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:text="詳細点検結果"
+                    android:textAppearance="?attr/textAppearanceHeadline6" />
+
+                <ImageView
+                    android:id="@+id/next_shosai"
+                    android:layout_width="32dp"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="詳細点検登録画面移動イメージ"
+                    app:cornerSizeBottomLeft="0dp"
+                    app:cornerSizeBottomRight="0dp"
+                    app:shapeAppearance="?attr/shapeAppearanceMediumComponent"
+                    app:srcCompat="@drawable/ic_next_right_64" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/gray_200"
+            android:visibility="visible" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_sonota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardPreventCornerOverlap="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/icon_sonota"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="その他点検登録ボタン"
+                    app:cornerSizeBottomLeft="0dp"
+                    app:cornerSizeBottomRight="0dp"
+                    app:shapeAppearance="?attr/shapeAppearanceMediumComponent"
+                    app:srcCompat="@drawable/ic_business_center_64" />
+
+                <TextView
+                    android:id="@+id/text_sonota"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:text="その他点検結果"
+                    android:textAppearance="?attr/textAppearanceHeadline6" />
+
+                <ImageView
+                    android:id="@+id/next_sonota"
+                    android:layout_width="32dp"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="その他初動点検登録画面移動イメージ"
+                    app:cornerSizeBottomLeft="0dp"
+                    app:cornerSizeBottomRight="0dp"
+                    app:shapeAppearance="?attr/shapeAppearanceMediumComponent"
+                    app:srcCompat="@drawable/ic_next_right_64" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/gray_200"
+            android:visibility="visible" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardPreventCornerOverlap="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/icon_setting"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="設定ボタン"
+                    app:cornerSizeBottomLeft="0dp"
+                    app:cornerSizeBottomRight="0dp"
+                    app:shapeAppearance="?attr/shapeAppearanceMediumComponent"
+                    app:srcCompat="@drawable/ic_settings_64" />
+
+                <TextView
+                    android:id="@+id/text_setting"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:text="設定"
+                    android:textAppearance="?attr/textAppearanceHeadline6" />
+
+                <ImageView
+                    android:id="@+id/next_setting"
+                    android:layout_width="32dp"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="設定画面移動イメージ"
+                    app:cornerSizeBottomLeft="0dp"
+                    app:cornerSizeBottomRight="0dp"
+                    app:shapeAppearance="?attr/shapeAppearanceMediumComponent"
+                    app:srcCompat="@drawable/ic_next_right_64" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/gray_200"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

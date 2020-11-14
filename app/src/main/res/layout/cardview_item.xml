@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardPreventCornerOverlap="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/icon"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="初動点検登録ボタン"
+            app:cornerSizeBottomLeft="0dp"
+            app:cornerSizeBottomRight="0dp"
+            app:shapeAppearance="?attr/shapeAppearanceMediumComponent"
+            app:srcCompat="@drawable/ic_account_balance_64" />
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:text="初動点検結果"
+            android:textAppearance="?attr/textAppearanceHeadline6" />
+
+        <ImageView
+            android:id="@+id/next"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="初動点検登録ボタン"
+            app:cornerSizeBottomLeft="0dp"
+            app:cornerSizeBottomRight="0dp"
+            app:shapeAppearance="?attr/shapeAppearanceMediumComponent"
+            app:srcCompat="@drawable/ic_next_right_64" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

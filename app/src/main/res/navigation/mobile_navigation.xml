@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.naoele.cardview01.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_menu_to_shodo"
+            app:destination="@id/nav_shodo" />
+
+        <action
+            android:id="@+id/action_menu_to_shosai"
+            app:destination="@id/nav_shosai" />
+
+        <action
+            android:id="@+id/action_menu_to_sonota"
+            app:destination="@id/nav_sonota" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.naoele.cardview01.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.naoele.cardview01.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_shodo"
+        android:name="com.naoele.cardview01.ui.shodo.ShodoFragment"
+        android:label="初動点検"
+        tools:layout="@layout/shodo_fragment">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_shosai"
+        android:name="com.naoele.cardview01.ui.shosai.ShosaiFragment"
+        android:label="詳細点検"
+        tools:layout="@layout/shosai_fragment">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_sonota"
+        android:name="com.naoele.cardview01.ui.sonota.SonotaFragment"
+        android:label="その他点検"
+        tools:layout="@layout/sonota_fragment">
+
+    </fragment>
+
+</navigation>

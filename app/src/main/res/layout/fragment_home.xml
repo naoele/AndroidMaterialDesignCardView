@@ -23,7 +23,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
-            android:text="Top categories"
+            android:text="Shortcut categories"
             android:textAlignment="textStart"
             android:textColor="@color/black"
             android:textSize="22sp"
@@ -75,15 +75,14 @@
                     app:strokeWidth="4dp" />
                 <!--                style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"-->
 
-                <com.google.android.material.textview.MaterialTextView
+                <TextView
                     android:id="@+id/text_photo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="8dp"
                     android:gravity="center_horizontal"
                     android:padding="8dp"
-                    android:text="Photography"
+                    android:text="撮影"
                     android:textAppearance="?attr/textAppearanceHeadline6" />
 
             </LinearLayout>
@@ -134,15 +133,14 @@
                     app:strokeWidth="4dp" />
                 <!--                style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"-->
 
-                <com.google.android.material.textview.MaterialTextView
+                <TextView
                     android:id="@+id/text_input"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="8dp"
                     android:gravity="center_horizontal"
                     android:padding="8dp"
-                    android:text="Art &amp; Design"
+                    android:text="入力"
                     android:textAppearance="?attr/textAppearanceHeadline6" />
 
             </LinearLayout>
